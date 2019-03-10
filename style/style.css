@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-size: 10px;
+	background-image: url(../image/Background.jpg);
+	margin: 0px;
+	padding: 0px;
+}
+#Top {
+	background-image: url(../image/%E6%B8%90%E5%8F%98%E9%BB%842.jpg);
+	margin: 0px;
+	padding: 0px;
+	height: 50px;
+}
+#Top .Top_main {
+	height: 50px;
+	width: 1500px;
+	background-color: #0C3;
+	margin: auto;
+}
+#Top .Top_main h1 {
+	width: 100px;
+	background-color: #C3C;
+	height: 50px;
+	margin: 0px;
+	padding: 0px;
+}

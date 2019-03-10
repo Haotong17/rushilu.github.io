@@ -5,16 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Chinese myth universe</title>
-    <script type="text/javascript" src="js1/three.min.js/three.min.r87.js"></script>
-    <script src="js1/node_modules/three/examples/js/renderers/CanvasRenderer.js"></script>
+    <script type="text/javascript" src="js/three.min.js/three.min.r87.js"></script>
+    <script src="js/node_modules/three/examples/js/renderers/CanvasRenderer.js"></script>
   
-    <script src="js1/node_modules/three/examples/js/renderers/Projector.js"></script>
-    <script type="text/javascript" src="js1/node_modules/jquery/tmp/jquery.js"></script>
-    <script type="text/javascript" src="js1/node_modules/three/examples/js/libs/stats.min.js"></script>
-    <script type="text/javascript" src="js1/node_modules/three/examples/js/libs/dat.gui.min.js"></script>
-    <script type="text/javascript" src="js1/node_modules/three/examples/js/controls/OrbitControls.js"></script>
-    <script type="text/javascript" src="js1/node_modules/three/examples/js/controls/TrackballControls.js"></script>
-    <script type="text/javascript" src="js1/node_modules/three/examples/js/controls/DragControls.js"></script>
+    <script src="js/node_modules/three/examples/js/renderers/Projector.js"></script>
+    <script type="text/javascript" src="js/node_modules/jquery/tmp/jquery.js"></script>
+    <script type="text/javascript" src="js/node_modules/three/examples/js/libs/stats.min.js"></script>
+    <script type="text/javascript" src="js/node_modules/three/examples/js/libs/dat.gui.min.js"></script>
+    <script type="text/javascript" src="js/node_modules/three/examples/js/controls/OrbitControls.js"></script>
+    <script type="text/javascript" src="js/node_modules/three/examples/js/controls/TrackballControls.js"></script>
+    <script type="text/javascript" src="js/node_modules/three/examples/js/controls/DragControls.js"></script>
     
     <script src="js/three.js-master/lib/jquery.js"></script>
     <script src="js/three.js-master/examples/js/Detector.js"></script>
@@ -52,8 +52,8 @@ body {
 	border-left-width: 0px;
 	font-weight: bold;
 	position: absolute;
-	left: 1167px;
-	top: 729px;
+	left: 844px;
+	top: 685px;
 	width: 1283px;
 	height: 89px;
 }
@@ -61,26 +61,36 @@ body {
 </head
 ><body>
 
-	<a href="www.baidu.com">
-    <button type="button" class="btn"  style="background-color:rgb(0,0,0);width: 250px;height: 100px;color:rgb(0,0,0); border:rgb(0,0,0);">
-   <span class="glyphicon glyphicon-ok" style="width: 200px; height: 50px;  text-align: center; font-size: 30px; line-height: 1.428571429; border-radius: 50px; margin-top: 30px; margin-left: 30px; float: left; background-color: #FF6; border: 1px solid #d5d5d5; left: 0px; top: 0px; ">进入博客</span>
-    </button>
-	</a>
-            
+
+   	<a href="www.baidu.com">
+   <button type="button"   style="background-color: rgb(255,255,153); width: 233px; height: 65px; color: rgb(0,0,0); border: rgb(0,0,0); border-radius: 5px 15px 20px 25px; font-size: 25px;">
+   
+ 
+   进入博客
+   </button>
+</a>
+           
+  
+  
+  
+  
             
 <div id="WebGL-output" style="position: absolute;z-index: 1"></div>
+
+  <iframe src="Background/Test_02.html" frameborder="0" z-index="0" width="1920px" height="500px" style="position: absolute; left: 497px; width: 1047px; top: 62px; height: 590px;"></iframe>
+
 <div>
-  <iframe src="Test_02.html" frameborder="0" z-index="0" width="1920px" height="500px" style="position: absolute; left: 560px; width: 1047px; top: 123px; height: 590px;"></iframe>
+  <iframe src="Background/index_4.html" frameborder="0" z-index="0" width="1920px" height="500px" style="position: absolute; left: 29px; width: 630px; top: 354px; height: 473px;"></iframe>
 </div>
 <div>
-  <iframe src="index_2.html" frameborder="0" z-index="0" width="1920px" height="500px" style="position: absolute; left: 29px; width: 975px; top: 469px; height: 358px;"></iframe>
-</div>
-<div>
-  <iframe src="index_1.html" frameborder="0" z-index="0" width="1920px" height="500px" style="position: absolute; left: 91px; width: 2467px; top: 76px; height: 758px;"></iframe>
+  <iframe src="Background/index_1.html" frameborder="0" z-index="0" width="1920px" height="500px" style="position: absolute; left: 91px; width: 2467px; top: 82px; height: 752px;"></iframe>
 </div>
 <div>
   <input name="index2" type="text" id="index2"  value="这里只不过是记录着这个世界凤毛麟角罢了，更多的故事，此刻正在发生着……" />
 </div>
+
+
+
 <script type="text/javascript">
 	   
 	    var camera, controls, selectObject;
@@ -119,9 +129,9 @@ body {
 
          var SphereGeometry=new THREE.SphereGeometry(1.5,15,20);
        // var cubeMaterial=new THREE.MeshBasicMaterial({color:0xbcbdb8,wireframe: true});
-        var Sphere=new createMesh(SphereGeometry,"earth.jpg");
-        Sphere.position.x=-1;
-        Sphere.position.y=-2;
+        var Sphere=new createMesh(SphereGeometry,"image/earth.jpg");
+        Sphere.position.x=-7;
+        Sphere.position.y=5;
         Sphere.position.z=0;
         //sphere.rotation.z=1.5*Math.PI;
         //sphere.rotation.y=-1.8*Math.PI;
@@ -132,17 +142,17 @@ body {
 
         var moonGeometry=new THREE.SphereGeometry(0.5,15,15);
         //var sphereMaterial=new THREE.MeshBasicMaterial({color:0xbcbdb8,wireframe: true});
-        var moon=createMesh(moonGeometry,"moon.jpg");
-        moon.position.x=0;
-        moon.position.y=5;
-        moon.position.z=0;
+        var moon=createMesh(moonGeometry,"image/moon.jpg");
+        moon.position.x=2;
+        moon.position.y=0;
+        moon.position.z=-3;
         moon.rotation.x=1.8*Math.PI;
 		moon.name = "moon";
         scene.add(moon);
 
         var sunGeometry=new THREE.SphereGeometry(6,12,12);
         //var sphereMaterial=new THREE.MeshBasicMaterial({color:0xbcbdb8,wireframe: true});
-        var sun=createMesh(sunGeometry,"sun.jpg");
+        var sun=createMesh(sunGeometry,"image/sun.jpg");
         sun.position.x=-50;
         sun.position.y=20;
         sun.position.z=-5;
@@ -186,188 +196,6 @@ body {
         render();
 		
 
-
-
-
-
-
-
-
-
-
-
-
-
-
- /*   var raycaster = new THREE.Raycaster();
-    var mouse = new THREE.Vector2();
-    function onMouseClick( event ) {
-
-        //通过鼠标点击的位置计算出raycaster所需要的点的位置，以屏幕中心为原点，值的范围为-1到1.
-
-        mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-        mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
-
-        // 通过鼠标点的位置和当前相机的矩阵计算出raycaster
-        raycaster.setFromCamera( mouse, camera );
-
-        // 获取raycaster直线和所有模型相交的数组集合
-        var intersects = raycaster.intersectObjects( scene.children );
-
-        console.log(intersects);
-
-        //将所有的相交的模型的颜色设置为红色，如果只需要将第一个触发事件，那就数组的第一个模型改变颜色即可
-        for ( var i = 0; i < intersects.length; i++ ) {
-
-            intersects[ i ].object.material.color.set( 0xff0000 );
-
-        }
-
-    }
-
-    window.addEventListener( 'click', onMouseClick, false );
-
-
-
-
- function onMouseDblclick(event) {
-
-        // 获取 raycaster 和所有模型相交的数组，其中的元素按照距离排序，越近的越靠前
-        var intersects = getIntersects(event);
-
-        // 获取选中最近的 Mesh 对象
-        if (intersects.length != 0 && intersects[0].object instanceof THREE.Mesh) {
-            selectObject = intersects[0].object;
-           // changeMaterial(selectObject);
-        } else {
-            alert("未选中 Mesh!");
-        }
-    }
-
-    // 获取与射线相交的对象数组
-    function getIntersects(event) {
-        event.preventDefault();
-        console.log("event.clientX:"+event.clientX)
-        console.log("event.clientY:"+event.clientY)
-		console.log("event.clientY:"+event.clientY)
-		console.log("Object:"+sphere.position.x)
-
-        // 声明 raycaster 和 mouse 变量
-        var raycaster = new THREE.Raycaster();
-        var mouse = new THREE.Vector2();
-
-        // 通过鼠标点击位置,计算出 raycaster 所需点的位置,以屏幕为中心点,范围 -1 到 1
-        mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-        mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-
-        //通过鼠标点击的位置(二维坐标)和当前相机的矩阵计算出射线位置
-        raycaster.setFromCamera(mouse, camera);
-
-        // 获取与射线相交的对象数组，其中的元素按照距离排序，越近的越靠前
-        var intersects = raycaster.intersectObjects(scene.children);
-
-        //返回选中的对象
-        return intersects;
-    }
-
-    // 窗口变动触发的方法
-    function onWindowResize() {
-        camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-    }
-
-    // 键盘按下触发的方法
-    function onKeyDown(event) {
-        switch (event.keyCode) {
-            case 13:
-                initCamera();
-                initControls();
-                break;
-        }
-    }
-	
-	 function initControls() {
-        controls = new THREE.TrackballControls(camera, renderer.domElement);
-        // controls.noRotate = true;
-        controls.noPan = true;
-    }
-	
-	 function initGui() {
-        // 保存需要修改相关数据的对象
-        gui = new function () {
-
-        }
-        // 属性添加到控件
-        var guiControls = new dat.GUI();
-    }
-
-    // 初始化性能插件
-    function initStats() {
-        var stats = new Stats();
-
-        stats.domElement.style.position = 'absolute';
-        stats.domElement.style.left = '0px';
-        stats.domElement.style.top = '0px';
-
-        document.body.appendChild(stats.domElement);
-        return stats;
-    }
-
-    // 更新div的位置
-    function renderDiv(object) {
-        // 获取窗口的一半高度和宽度
-        let halfWidth = window.innerWidth / 2;
-        let halfHeight = window.innerHeight / 2;
-
-        // 逆转相机求出二维坐标
-        let vector = object.position.clone().project(camera);
-
-        // 修改 div 的位置
-        $("#label").css({
-            left: vector.x * halfWidth + halfWidth,
-            top: -vector.y * halfHeight + halfHeight - object.position.y
-        });
-        // 显示模型信息
-        $("#label").text("name:" + object.name);
-    }
-
-    // 更新控件
-    function update() {
-        stats.update();
-        controls.update();
-        controls.handleResize();
-    }
-
-    // 初始化
-    function init() {     
-        initGui();
-		initControls();
-		//initCamera();
-		//initContent();
-		//initRenderer();
-        addEventListener('dblclick', onMouseDblclick, false);
-        addEventListener('resize', onWindowResize, false);
-        addEventListener('keydown', onKeyDown, false);
-    }
-
-    function animate() {
-        if (selectObject != undefined && selectObject != null) {
-            renderDiv(selectObject);
-        }
-        requestAnimationFrame(animate);
-        renderer.render(scene, camera);
-        update();
-    }
-
-    init();
-    animate();*/
-
-
-
-
-	
-	
 		
    </script>
 </body>
